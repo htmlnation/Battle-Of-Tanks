@@ -1,0 +1,43 @@
+.character {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  transform-style: preserve-3d;
+  float: left;  
+}
+
+.character div {
+  height: 100%;
+  width: 100%;
+  position: absolute;  
+}
+
+.character .front {
+  transform: translateZ(25px);
+  background-size: 100% 100%;
+}
+
+.character .back {
+  transform: translateZ(-25px);
+  background-size: 100% 100%;
+}
+
+.character .left {
+  transform: rotateY(90deg) translateZ(-25px);  
+  background-size: 100% 100%;
+}
+
+.character .right {
+  transform: rotateY(90deg) translateZ(25px);
+  background-size: 100% 100%;
+}
+
+.character .top {
+  transform: rotateX(90deg) translateZ(25px);
+  background-size: 100% 100%;   
+}
+
+.character .bottom {
+  transform: rotateX(90deg) translateZ(-25px);
+  background-size: 100% 100%;
+}
